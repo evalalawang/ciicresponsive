@@ -1,0 +1,673 @@
+    #section1,
+	#section2,
+	#section3,
+	 {
+		margin: 0 auto;
+		padding: 0 auto;
+		overflow: hidden;
+		display: block;
+		font-family: "Helvetica";
+	}
+
+	/*-----产品页大标题部分-----*/
+	.product-intro,/*设置产品信息页每个模块大小位置*/
+	.relative-services,
+	.info-1,
+	.info-2,
+	.procedure,
+	.notice {
+		display: block;
+		box-sizing: border-box;
+		width: 100%;
+		height: auto;
+		padding-top: 0.5em;
+		padding-bottom: 0.5em;
+		margin: 0 auto;
+		font-family: "Helvetica";
+	}
+
+	.clearfix:after {/*帮助清除下方内容浮动异常问题*/
+		visibility: hidden;
+		display: block;
+		font-size: 0;
+		content: " ";
+		clear: both;
+		height: 0;
+	}
+
+	.product-intro h1,
+	.relative-services h1,
+	.info-1 h1,
+	.info-2 h1,
+	.procedure h1,
+	.notice h1 
+	{
+		font-size: 1.6rem;
+		letter-spacing: 3px;
+		display: inline;
+		color: rgb(0, 61, 126);
+		vertical-align: top;
+	}
+
+	.product-intro h1:before,
+	.relative-services h1:before,
+	.info-1 h1:before,
+	.info-2 h1:before,
+	.procedure h1:before,
+	.notice h1:before {
+		content: '|';
+		position: relative;
+		display: inline-block;
+		color: rgb(0, 61, 129);
+		z-index: 1111111;
+	}
+
+	.icon {
+		display: none; 
+	}
+
+	.ribbon {
+		display: block;
+		box-sizing: border-box;
+		width: 90%;
+		padding: 0.3em;
+		margin-bottom: 0.3em;
+	}
+
+	.services,
+	.information-1,
+	.information-2,
+	.steps,
+	.notices {
+		display: block;
+		background-color: #fff;
+		width: 100%;
+		box-sizing: border-box;
+		padding: 0.3em;
+		height: auto;
+	}
+
+	.introduction {
+		display: block;
+		background-color: #fff;
+		width: 100%;
+		box-sizing: border-box;
+		padding: 0.4em;
+		height: auto;
+	}
+
+	.left-cell {
+		width: 100%;
+		display: none;
+		box-sizing: border-box;
+		position: relative;
+	}
+	/*以下部分包括产品介绍的重复内容在移动端中隐去
+
+	.left-cell-wrapper {
+		display: block;
+		width: 100%;
+		box-sizing: border-box;
+		padding: 0.6em;
+	}
+
+	.left-cell-wrapper h2 {
+		font-family: 'STHeiti';
+		font-size: 2.65rem;
+		letter-spacing: 10px;
+		color: #fff;
+		padding: 0;
+		margin-bottom: 1em
+	}
+
+	.left-cell th {
+		display: block;
+		font-family: 'STHeiti';
+		color: rgb(0, 61, 129);
+		background-color: #ff8f00;
+		font-size: 0.7rem;
+		text-align: center;
+		font-weight: bold;
+		letter-spacing: 3px;
+		width: 9em;
+		line-height: 2em;
+	}
+
+	.left-cell td {
+		display: block;
+		color: #222;
+		font-size: 0.7rem;
+		letter-spacing: 2px;
+		text-align: center;
+	}
+
+	.left-cell p {
+		font-family: 'STHeiti';
+		font-size: 13px;
+		letter-spacing: 3px;
+		color: #fff;
+		margin-top: 2em
+	}
+	*/
+
+	.right-cell {
+		display: block;
+		width: 100%;
+	}
+
+	.right-cell img {
+		display: block;
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.right-cell p {
+		display: none;
+	}
+
+	/*---相关产品模块---*/
+
+	.additional-service {
+		width: 48%;
+		display: inline-block;
+		border: 1px rgba(222, 222, 222, 0.4) solid;
+		overflow: hidden;
+		float: left;
+		margin: 0.5em 0.5%;
+		padding: 0 auto;
+	}
+
+	.service-image {
+		display: block;
+		box-sizing: border-box;
+		width: 100%;
+		padding: 0 auto;
+	}
+
+	.price-info {
+		display: block;
+		width: 90%;
+		padding: 0 5%;
+	}
+
+	.additional-service img {
+		display: block;
+		width: 100%;
+		box-sizing: border-box;
+		padding: 0 auto;
+	}
+
+	.additional-service h2 {
+		font-size: 0.75rem;
+		color: rgb(0, 61, 126);
+		font-weight: bold;
+		padding: 0.3em 0;
+		margin: 0;
+		letter-spacing: 2px;
+	}
+
+	.additional-service h3 {
+		font-size: 1rem;
+	}
+
+	.additional-service span {
+		display: block;
+		width: 100%;
+		padding: 0.3em 0.5em;
+		margin: 0 auto;
+		text-align: center;
+		box-sizing: border-box;
+		border-radius: 3px;
+		height: 2.15em;
+		letter-spacing: 2px;
+		background: linear-gradient(70deg, #ff8f00 40%, #ff7200 90%);
+	}
+
+	.services span a {
+		color: #fff;
+		font-size: 0.75rem;
+		text-decoration: none;
+	}
+
+	/*---注意事项模块之表格样式---*/
+	.information-1 {
+		font-size: 0.75rem;
+	}
+
+	.information-1 tr td:first-child {
+		padding: 0.45em 1em;
+		box-sizing: border-box;
+		border-right: 2px rgba(222, 222, 222, 0.5) dotted;
+		width: 25%;
+		color: rgb(0, 61, 126);
+		font-size: 0.75rem;
+		font-weight: bold;
+		letter-spacing: 2px;
+	}
+
+	.information-1 tr td:nth-child(2) {
+		padding: 0.45em 1em;
+		box-sizing: border-box;
+		width: 75%;
+		font-size: 0.75rem;
+		color: #666666;
+	}
+
+	/*---注意事项模块之样式二---*/
+	.information-2 p {
+		font-size: 0.75rem;
+		color: #666666;
+		letter-spacing: 1px;
+		padding: 0 0.6em 0 0.6em;
+	}
+
+	.information-2 p span {
+		color: rgb(0, 61, 129);
+		font-weight: bold;
+
+	}
+
+	/*---受理流程模块---*/
+	.steps p {
+		display: inline-block;
+		font-size: 0.75rem;
+		letter-spacing: 1px;
+		color: #666666;
+	}
+
+	.steps {
+		display: block;
+		margin: 0 auto;
+		padding: 0 auto;
+		width: 100%;
+	}
+
+	.address {
+		display: block;
+		width: 100%;
+		padding: 0.5em auto;
+		border-radius: 20px;
+		background-color: #eee;
+		margin-top: 1em;
+	}
+
+	.address table {
+		display: block;
+		width: 100%;
+	}
+
+	.address td {
+		width: 100%;
+		display: block;
+		padding: 1em auto;
+	}
+
+	.address li {
+		font-size: 0.75rem;
+		letter-spacing: 1px;
+		color: #666666;
+		line-height: 1.2rem;
+		list-style: none;
+		padding: 0 0.5em;
+	}
+
+	.address span {
+		display: inline-block;
+		width: 100%;
+		color: rgb(0, 61, 129);
+	}
+
+	.application-step {
+		display: inline-block;
+		width: 46%;
+		height: 16em;
+		padding: 0 auto;
+		margin: 1.65%;
+		float: left;
+		text-align: center;
+		border: 1px #999 dotted;
+	}
+
+	.application-step:last-child {
+		margin-right: 0 !important;
+	}
+
+	.application-step img {
+		display: inline-block;
+		width: 40%;
+		margin: 0;
+		background-color: #fff;
+		border-radius: 4em;
+	}
+
+	.application-step h3 {
+		font-size: 0.875rem;
+		letter-spacing: 2px;
+		color: #ff8f00;
+		font-weight: bold;
+		position: relative;
+	}
+
+	#first-step h3:before {
+		content: '1';
+		font-size: 1.5rem;
+		position: relative;
+		display: block;
+		width: 100%;
+		z-index: 111111;
+		color: #999;
+	}
+
+	#second-step h3:before {
+		content: '2';
+		font-size: 1.5rem;
+		position: relative;
+		display: block;
+		width: 100%;
+		z-index: 111111;
+		color: #999;
+	}
+
+	#third-step h3:before {
+		content: '3';
+		font-size: 1.5rem;
+		display: block;
+		width: 100%;
+		position: relative;
+		z-index: 111111;
+		color: #999;
+	}
+
+	#fourth-step h3:before {
+		content: '4';
+		font-size: 1.5rem;
+		display: block;
+		width: 100%;
+		position: relative;
+		z-index: 111111;
+		color: #999;
+	}
+
+	.application-step p {
+		padding-left: 0 !important;
+		line-height: 1.2rem;
+	}
+
+	/*---预定须知模块---*/
+	.notice ul {
+		display: block;
+		width: 100%;
+		margin: 0 auto;
+		padding: 0.5em;
+		font-size: 0.75rem;
+		color: #666666;
+		line-height: 1.2rem;
+		letter-spacing: 1px;
+	} 
+
+	.notice ul li {
+		list-style: none;
+		margin-bottom: 1em;
+	}
+
+	.qr-code {
+		text-align: center;
+	}
+
+	.qr-code img {
+		display: block;
+		width: 100%;
+		margin: 0 auto;
+	}
+
+@media only screen and (min-width: 544px){/*手机竖屏*/
+	.product-intro h1,
+	.relative-services h1,
+	.info-1 h1,
+	.info-2 h1,
+	.procedure h1,
+	.notice h1 {
+		font-size: 2.7em;
+	}
+
+	.additional-service h2 {
+		font-size: 1.275rem;
+	}
+
+	.additional-service h3 {
+		font-size: 1.7rem;
+	}
+
+	.services span a {
+		font-size: 1.275rem;
+	}
+
+	/*---注意事项模块之表格样式---*/
+	.information-1 {
+		font-size: 1.275rem;
+	}
+
+	.information-1 tr td:first-child {
+		font-size: 1.275rem;
+	}
+
+	.information-1 tr td:nth-child(2) {
+		font-size: 1.275rem;
+	}
+
+	/*---注意事项模块之样式二---*/
+	.information-2 p {
+		font-size: 1.275rem;
+	}
+
+	.steps p {
+		font-size: 1.275rem;
+	}
+
+	.address li {
+		font-size: 1.275rem;
+		line-height: 2rem;
+	}
+
+	.application-step h3 {
+		font-size: 1.4875rem;
+	}
+
+	#first-step h3:before {
+		font-size: 2.5rem;
+	}
+
+	#second-step h3:before {
+		font-size: 2.5rem;
+	}
+
+	#third-step h3:before {
+		font-size: 2.5rem;
+	}
+
+	#fourth-step h3:before {
+		font-size: 2.5rem;
+	}
+
+	.notice ul {
+		font-size: 1.275rem;
+		line-height: 2rem;
+	}
+
+	.application-step {
+		height: 25rem;
+	}
+
+	.application-step p {
+		line-height: 2rem;
+	}
+}
+
+@media only screen and (min-width: 768px){/*手机横屏*/
+	.product-intro h1,
+	.relative-services h1,
+	.info-1 h1,
+	.info-2 h1,
+	.procedure h1,
+	.notice h1 {
+		font-size: 3.78em;
+	}
+
+	.additional-service h2 {
+		font-size: 1.785rem;
+	}
+
+	.additional-service h3 {
+		font-size: 2.38rem;
+	}
+
+	.services span a {
+		font-size: 1.785rem;
+	}
+
+	/*---注意事项模块之表格样式---*/
+	.information-1 {
+		font-size: 1.785rem;
+	}
+
+	.information-1 tr td:first-child {
+		font-size: 1.785rem;
+	}
+
+	.information-1 tr td:nth-child(2) {
+		font-size: 1.785rem;
+	}
+
+	/*---注意事项模块之样式二---*/
+	.information-2 p {
+		font-size: 1.785rem;
+	}
+
+	.steps p {
+		font-size: 1.785rem;
+	}
+
+	.address li {
+		font-size: 1.785rem;
+		line-height: 2.8rem;
+	}
+
+	.application-step h3 {
+		font-size: 1.4875rem;
+	}
+
+	#first-step h3:before {
+		font-size: 3.5rem;
+	}
+
+	#second-step h3:before {
+		font-size: 3.5rem;
+	}
+
+	#third-step h3:before {
+		font-size: 3.5rem;
+	}
+
+	#fourth-step h3:before {
+		font-size: 3.5rem;
+	}
+
+	.notice ul {
+		font-size: 1.785rem;
+		line-height: 2.8rem;
+	}
+
+	.application-step {
+		height: 35rem;
+	}
+
+	.application-step p {
+		line-height: 2.8rem;
+	}
+}
+
+@media only screen and (min-width: 992px){/*平板*/
+	.product-intro h1,
+	.relative-services h1,
+	.info-1 h1,
+	.info-2 h1,
+	.procedure h1,
+	.notice h1 {
+		font-size: 4.536em;
+	}
+
+	.additional-service h2 {
+		font-size: 2.142rem;
+	}
+
+	.additional-service h3 {
+		font-size: 2.38rem;
+	}
+
+	.services span a {
+		font-size: 2.142rem;
+	}
+
+	/*---注意事项模块之表格样式---*/
+	.information-1 {
+		font-size: 2.142rem;
+	}
+
+	.information-1 tr td:first-child {
+		font-size: 2.142rem;
+	}
+
+	.information-1 tr td:nth-child(2) {
+		font-size: 2.142rem;
+	}
+
+	/*---注意事项模块之样式二---*/
+	.information-2 p {
+		font-size: 2.142rem;
+	}
+
+	.steps p {
+		font-size: 2.142rem;
+	}
+
+	.address li {
+		font-size: 2.142rem;
+		line-height: 3.36rem;
+	}
+
+	.application-step h3 {
+		font-size: 1.785rem;
+	}
+
+	#first-step h3:before {
+		font-size: 4.2rem;
+	}
+
+	#second-step h3:before {
+		font-size: 4.2rem;
+	}
+
+	#third-step h3:before {
+		font-size: 4.2rem;
+	}
+
+	#fourth-step h3:before {
+		font-size: 4.2rem;
+	}
+
+	.notice ul {
+		font-size: 2.142rem;
+		line-height: 3.36rem;
+	}
+
+	.application-step {
+		height: 42rem;
+	}
+
+	.application-step p {
+		line-height: 3.36rem;
+	}
+}
+
+
+

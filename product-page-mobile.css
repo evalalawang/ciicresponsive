@@ -7,6 +7,18 @@
 		overflow: hidden;
 		display: block;
 		font-family: "Helvetica";
+		background-color: #fff;
+		overflow-x: hidden;
+	}
+
+	body {
+		background-color: #f2f2f2;
+	}
+
+	#qrDiv {
+		display: block;
+		width: 100%;
+		height: 10em;
 	}
 
 	/*-----产品页大标题部分-----*/
@@ -42,10 +54,10 @@
 	.procedure h1,
 	.notice h1 
 	{
-		font-size: 1.6rem;
-		letter-spacing: 3px;
+		font-size: 0.9rem;
+		letter-spacing: 1.5px;
 		display: inline;
-		color: rgb(0, 61, 126);
+		color: #333;
 		vertical-align: top;
 	}
 
@@ -58,7 +70,7 @@
 		content: '|';
 		position: relative;
 		display: inline-block;
-		color: rgb(0, 61, 129);
+		color: #333;
 		z-index: 1111111;
 	}
 
@@ -85,80 +97,79 @@
 		box-sizing: border-box;
 		padding: 0.3em;
 		height: auto;
+		box-shadow: 1px 2px 5px #ccc;
 	}
 
-	.introduction {
+	.introduction{
 		display: block;
-		background-color: #fff;
 		width: 100%;
 		box-sizing: border-box;
-		padding: 0.4em;
 		height: auto;
+		background-color: #fff;
+		box-shadow: 1px 2px 5px #ccc;
 	}
 
 	.left-cell {
 		width: 100%;
-		display: none;
 		box-sizing: border-box;
 		position: relative;
+		display: block;
 	}
-	/*以下部分包括产品介绍的重复内容在移动端中隐去
 
+	.left-cell tr {
+		display: inline-block;
+		width: 40%;
+		float: left;
+	}
+	
 	.left-cell-wrapper {
 		display: block;
 		width: 100%;
 		box-sizing: border-box;
-		padding: 0.6em;
+		padding: 0.3rem;
 	}
 
 	.left-cell-wrapper h2 {
-		font-family: 'STHeiti';
-		font-size: 2.65rem;
-		letter-spacing: 10px;
-		color: #fff;
-		padding: 0;
-		margin-bottom: 1em
+		display: none;
 	}
 
 	.left-cell th {
 		display: block;
-		font-family: 'STHeiti';
-		color: rgb(0, 61, 129);
-		background-color: #ff8f00;
+		color: #999;
 		font-size: 0.7rem;
-		text-align: center;
+		text-align: left;
 		font-weight: bold;
-		letter-spacing: 3px;
-		width: 9em;
-		line-height: 2em;
+		letter-spacing: 2px;
+		width: 30vw;
+		line-height: 1.3rem;
 	}
 
-	.left-cell td {
+	.left-cell table td {
 		display: block;
-		color: #222;
+		color: #333;
 		font-size: 0.7rem;
 		letter-spacing: 2px;
-		text-align: center;
+		width: 50vw;
+		text-align: left;
+		line-height: 1.3rem;
 	}
 
 	.left-cell p {
-		font-family: 'STHeiti';
-		font-size: 13px;
-		letter-spacing: 3px;
-		color: #fff;
-		margin-top: 2em
+		font-size: 0.7rem;
+		letter-spacing: 1px;
+		color: #666;
+		margin-top: 1rem
 	}
-	*/
 
 	.right-cell {
-		display: block;
+		display: inline-block;
 		width: 100%;
 	}
 
 	.right-cell img {
 		display: block;
-		width: 100%;
-		margin: 0 auto;
+		width: 80%;
+		margin: 0;
 	}
 
 	.right-cell p {
@@ -199,7 +210,7 @@
 
 	.additional-service h2 {
 		font-size: 0.75rem;
-		color: rgb(0, 61, 126);
+		color: #333;
 		font-weight: bold;
 		padding: 0.3em 0;
 		margin: 0;
@@ -235,34 +246,34 @@
 	}
 
 	.information-1 tr td:first-child {
-		padding: 0.45em 1em;
+		padding: 0.45em;
 		box-sizing: border-box;
 		border-right: 2px rgba(222, 222, 222, 0.5) dotted;
-		width: 25%;
-		color: rgb(0, 61, 126);
+		width: 35%;
+		color: #999;
 		font-size: 0.75rem;
 		font-weight: bold;
 		letter-spacing: 2px;
 	}
 
 	.information-1 tr td:nth-child(2) {
-		padding: 0.45em 1em;
+		padding: 0.45em;
 		box-sizing: border-box;
-		width: 75%;
+		width: 65%;
 		font-size: 0.75rem;
-		color: #666666;
+		color: #333;
 	}
 
 	/*---注意事项模块之样式二---*/
 	.information-2 p {
 		font-size: 0.75rem;
-		color: #666666;
+		color: #333;
 		letter-spacing: 1px;
 		padding: 0 0.6em 0 0.6em;
 	}
 
 	.information-2 p span {
-		color: rgb(0, 61, 129);
+		color: #999;
 		font-weight: bold;
 
 	}
@@ -286,7 +297,6 @@
 		display: block;
 		width: 100%;
 		padding: 0.5em auto;
-		border-radius: 20px;
 		background-color: #eee;
 		margin-top: 1em;
 	}
@@ -305,7 +315,7 @@
 	.address li {
 		font-size: 0.75rem;
 		letter-spacing: 1px;
-		color: #666666;
+		color: #333;
 		line-height: 1.2rem;
 		list-style: none;
 		padding: 0 0.5em;
@@ -314,7 +324,7 @@
 	.address span {
 		display: inline-block;
 		width: 100%;
-		color: rgb(0, 61, 129);
+		color: #999;
 	}
 
 	.application-step {
@@ -427,7 +437,21 @@
 	.info-2 h1,
 	.procedure h1,
 	.notice h1 {
-		font-size: 2.7em;
+		font-size: 1.53rem;
+	}
+
+	.left-cell th {
+		font-size: 1.19rem;
+		line-height: 2.2rem;
+	}
+
+	.left-cell table td {
+		font-size: 1.19rem;
+		line-height: 2.2rem;
+	}
+
+	.left-cell p {
+		font-size: 1.19rem;
 	}
 
 	.additional-service h2 {
@@ -510,7 +534,21 @@
 	.info-2 h1,
 	.procedure h1,
 	.notice h1 {
-		font-size: 3.78em;
+		font-size: 2.16em;
+	}
+
+	.left-cell th {
+		font-size: 1.67rem;
+		line-height: 3.1rem;
+	}
+
+	.left-cell table td {
+		font-size: 1.67rem;
+		line-height: 3.1rem;
+	}
+
+	.left-cell p {
+		font-size: 1.67rem;
 	}
 
 	.additional-service h2 {
@@ -593,7 +631,21 @@
 	.info-2 h1,
 	.procedure h1,
 	.notice h1 {
-		font-size: 4.536em;
+		font-size: 3rem;
+	}
+
+	.left-cell th {
+		font-size: 2.16rem;
+		line-height: 4rem;
+	}
+
+	.left-cell table td {
+		font-size: 2.16rem;
+		line-height: 4rem;
+	}
+
+	.left-cell p {
+		font-size: 2.16rem;
 	}
 
 	.additional-service h2 {

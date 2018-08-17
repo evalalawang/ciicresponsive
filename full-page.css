@@ -1,0 +1,309 @@
+		.clearfix:after {/*帮助清除下方内容浮动异常问题*/
+			visibility: hidden;
+			display: block;
+			font-size: 0;
+			content: " ";
+			clear: both;
+			height: 0;
+		}
+
+		.ciic-container {
+			display: block;
+			max-width: 1100px;
+			padding: 0 auto;
+			margin: 0 auto;
+		}
+
+		.ciic-fullpage-title-1 {
+			font-size: 42px;
+			font-family: 'Apple LiGothic Medium';
+			text-align: center;
+			letter-spacing: 2px;
+			font-weight: bold;
+			color: #ffdf05;
+			position: relative;
+			margin-bottom: 1em;
+			background: url('../images/decor-title.png');
+			background-size: contain;
+			background-position: 420px 10px;
+			background-repeat: no-repeat;
+		}
+
+		.ciic-fullpage-title-1 span {
+			color: #fff;
+		}
+
+		.ciic-fullpage-title-1:after {
+			content: '';
+			display: inline-block;
+			width: 2.4em;
+			height: 2.4em;
+			border-radius: 1.2em;
+			background-color: rgb(0, 61, 129);
+			position: relative;
+			z-index: -1;
+			top: 0.8em;
+			left: -2.3em;
+		}
+
+		.ciic-fullpage-title-1:before {
+			content: '';
+			display: inline-block;
+			width: 2.4em;
+			height: 0.2em;
+			background-color: #ff9900;
+			position: relative;
+			z-index: -1;
+			top: 0.6em;
+			left: 1.9em;
+		}
+
+		#ciic-product-carousel {
+			display: block;
+			width: 100%;
+			padding: 10px 0 50px 0;
+			background-color: #ff9900;
+			border-radius: 20px;
+			box-shadow: 3px 3px 10px #ddd;
+		}
+
+		#ciic-carousel-inner {
+			display: block;
+			width: 80%;
+			margin: 0 10%;
+		}
+
+		.ciic-product-list {
+			display: inline-block;
+			width: 31%;
+			box-sizing: border-box;
+			padding: 0 auto;
+			margin: 1%;
+			text-align: center;
+			background-color: #fff;
+			box-shadow: 2px 2px 16px #666;
+		}
+
+
+		.ciic-product-list img {
+			width: 10em;
+			height: auto;
+			display: inline-block;
+			text-align: center;
+			margin: 30px;
+		}
+
+		.ciic-price-tag {
+			display: inline-block;
+			width: 100%;	
+		}
+
+		.ciic-price-tag h2 {
+			font-family: 'microsoft yahei';
+			font-size: 20px;
+			letter-spacing: 1px;
+			font-weight: bold;
+			display: inline-block;
+			box-sizing: border-box;
+			padding: 5px;
+			width: 100%;
+			height: 2em;
+			color: #333;
+		}
+
+		.ciic-price-tag h3 {
+			font-family: 'microsoft yahei';
+			font-size: 18px;
+			display: block;
+			color: #e1491a;
+			font-weight: bold;
+		}
+
+		.ciic-price-tag h3 span {
+			display: inline-block;
+			background: linear-gradient(98deg, #ff9900 45%, #e1491a 80%);
+			padding: 6px;
+			width: 8em;
+			margin: 0 10px;
+			border-radius: 6px;
+			color: #fff;
+			font-size: 14px;
+			letter-spacing: 2px;
+		}
+
+		.ciic-fullpage-title-2 {
+			font-size: 42px;
+			font-family: 'Apple LiGothic Medium';
+			text-align: center;
+			letter-spacing: 2px;
+			font-weight: bold;
+			color: #e1491a;
+			position: relative;
+			margin-bottom: 1em;
+			background: url('../images/decor-title.png');
+			background-size: contain;
+			background-position: 420px 10px;
+			background-repeat: no-repeat;
+		}
+
+		.ciic-fullpage-title-2 span {
+			color: #fff;
+		}
+
+		.ciic-fullpage-title-2:after {
+			content: '';
+			display: inline-block;
+			width: 2.4em;
+			height: 2.4em;
+			border-radius: 1.2em;
+			background-color: #ff9900;
+			position: relative;
+			z-index: -1;
+			top: 0.8em;
+			left: -2.3em;
+		}
+
+		.ciic-fullpage-title-2:before {
+			content: '';
+			display: inline-block;
+			width: 2.4em;
+			height: 0.2em;
+			background-color: #ccc;
+			position: relative;
+			z-index: -1;
+			top: 0.6em;
+			left: 1.9em;
+		}
+
+		/*--end of the first section--*/
+		.ciic-product-sale {
+			display: block;
+			width: 100%;
+			padding: 10px 0 50px 0;
+		}
+
+		.ciic-sale-product {
+			display: inline-block;
+			width: 100%;
+			box-sizing: border-box;
+			padding: 0 auto;
+			margin: 0 auto;
+			background-color: #fff;
+			border: 1px #e2e2e2 solid;
+			box-shadow: 3px 3px 10px #ddd;
+			overflow: hidden;
+		}
+
+		.ciic-sale-product img {
+			display: inline-block;
+			margin: 0 auto;
+			padding: 0 auto;
+			width: 100%;
+			transition: 0.1s ease;
+		}
+
+		.ciic-price-section {
+			background-color: #fff;
+		}
+
+		.ciic-price-section h2 {
+			font-family: 'microsoft yahei';
+			font-size: 20px;
+			letter-spacing: 1px;
+			font-weight: bold;
+			display: inline-block;
+			box-sizing: border-box;
+			padding: 5px;
+			width: 100%;
+			text-align: center;
+			height: 2em;
+			color: #333;
+		}
+
+		.ciic-original-price {
+			display: inline-block;
+			position: relative;
+			left: 4em;
+			font-size: 14px;
+			color: #999;
+			text-decoration: line-through;
+		}
+
+		.ciic-price-section h3 {
+			font-family: 'microsoft yahei';
+			font-size: 18px;
+			display: block;
+			color: #e1491a;
+			font-weight: bold;
+			width: 100%;
+			text-align: center;
+		}
+
+		.ciic-price-section h3 span {
+			display: inline-block;
+			background: linear-gradient(98deg, #ff9900 45%, #e1491a 80%);
+			padding: 6px;
+			width: 8em;
+			margin: 0 10px;
+			border-radius: 6px;
+			color: #fff;
+			font-size: 14px;
+			letter-spacing: 2px;
+		}
+
+		.ciic-travel-recomm {
+			display: inline-block;
+			width: 100%;
+			box-sizing: border-box;
+			overflow: hidden;
+			padding: 0 auto;
+			margin: 0 auto;
+			background-color: #fff;
+			border: 1px #e2e2e2 solid;
+			box-shadow: 3px 3px 10px #ddd;
+			height: 30em;
+		}
+
+		.ciic-travel-recomm:hover {
+			transform: translateY(-10px);
+			transition: 0.2s ease-in;
+		}
+
+		.ciic-travel-recomm img {
+			display: inline-block;
+			margin: 0 auto;
+			padding: 0 auto;
+			width: 100%;
+		}
+
+		.ciic-trip-intro {
+			display: inline-block;
+			padding: 15px;
+			font-size: 14px;
+			color: #333;
+			height: 13em;
+		}
+
+		.ciic-trip-intro span {
+			font-weight: bold;
+			color: #e1491a;
+			letter-spacing: 1px;
+		}
+
+		.ciic-hot-tag {
+			display: inline-block;
+			width: 4em;
+			height: 1.5em;
+			border-top-right-radius: 6px;
+			border-bottom-right-radius: 6px;
+			position: absolute;
+			background-color: #e1491a;
+			font-size: 13px;
+			color: #fff;
+			left: 11px;
+			top: 1.5em;
+			text-align: center;
+			z-index: 11111;
+		}
+
+		
